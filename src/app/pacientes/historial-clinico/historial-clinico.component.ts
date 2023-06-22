@@ -59,6 +59,7 @@ export class HistorialClinicoComponent implements OnInit{
   }
   
   ngOnInit(): void {
+    console.log("aqui estoy");
     this.paciente_id = this.valueService.id;
     console.log(this.paciente_id);
     let promise1 = this.getDataPaciente();
@@ -74,28 +75,28 @@ export class HistorialClinicoComponent implements OnInit{
         this.enfermedades.patchValue({
           nombre: this.historial.nombre,
           apellido: this.historial.apellido,
-          edad: this.historial.historial_clinico?.edad,
-          altura: this.historial.historial_clinico?.altura,
-          peso: this.historial.historial_clinico?.peso,
-          masa_corporal: this.historial.historial_clinico?.masa_corporal,
-          temperatura: this.historial.historial_clinico?.temperatura,
-          frecuencia_respiratoria: this.historial.historial_clinico?.frecuencia_respiratoria,
-          presion_arterial: this.historial.historial_clinico?.presion_arterial,
-          frecuencia_cardiaca: this.historial.historial_clinico?.frecuencia_cardiaca,
-          diabetes: this.historial.historial_clinico?.diabetes,
-          diabetes_descripcion: this.historial.historial_clinico?.diabetes_descripcion,
-          tiroideas: this.historial.historial_clinico?.tiroideas,
-          tiroideas_descripcion: this.historial.historial_clinico?.tiroideas_descripcion,
-          hipertension: this.historial.historial_clinico?.hipertension,
-          hipertension_descripcion: this.historial.historial_clinico?.hipertension_descripcion,
-          cardiopatia: this.historial.historial_clinico?.cardiopatia,
-          cardiopatia_descripcion: this.historial.historial_clinico?.cardiopatia_descripcion,
-          traumatismo: this.historial.historial_clinico?.traumatismo,
-          traumatismo_descripcion: this.historial.historial_clinico?.traumatismo_descripcion,
-          cancer: this.historial.historial_clinico?.cancer,
-          cancer_descripcion: this.historial.historial_clinico?.cancer_descripcion,
-          otros: this.historial.historial_clinico?.otros,
-          otros_descripcion: this.historial.historial_clinico?.otros_descripcion,
+          edad: this.historial.historialClinico?.edad,
+          altura: this.historial.historialClinico?.altura,
+          peso: this.historial.historialClinico?.peso,
+          masa_corporal: this.historial.historialClinico?.masaCorporal,
+          temperatura: this.historial.historialClinico?.temperatura,
+          frecuencia_respiratoria: this.historial.historialClinico?.frecuenciaRespiratoria,
+          presion_arterial: this.historial.historialClinico?.presionArterial,
+          frecuencia_cardiaca: this.historial.historialClinico?.frecuenciaCardiaca,
+          diabetes: this.historial.historialClinico?.diabetes,
+          diabetes_descripcion: this.historial.historialClinico?.diabetesDescripcion,
+          tiroideas: this.historial.historialClinico?.tiroideas,
+          tiroideas_descripcion: this.historial.historialClinico?.tiroideasDescripcion,
+          hipertension: this.historial.historialClinico?.hipertension,
+          hipertension_descripcion: this.historial.historialClinico?.hipertensionDescripcion,
+          cardiopatia: this.historial.historialClinico?.cardiopatia,
+          cardiopatia_descripcion: this.historial.historialClinico?.cardiopatiaDescripcion,
+          traumatismo: this.historial.historialClinico?.traumatismo,
+          traumatismo_descripcion: this.historial.historialClinico?.traumatismoDescripcion,
+          cancer: this.historial.historialClinico?.cancer,
+          cancer_descripcion: this.historial.historialClinico?.cancerDescripcion,
+          otros: this.historial.historialClinico?.otros,
+          otros_descripcion: this.historial.historialClinico?.otrosDescripcion,
         });
       },
     })

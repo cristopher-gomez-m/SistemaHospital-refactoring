@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     //this.valueService.CerrarSesion();
+    console.log('asd');
     this.validateFrm = this.fb.group({
       email: [null, [Validators.required, Validators.email]],
       password: [null, [Validators.required]],
@@ -48,6 +49,7 @@ export class LoginComponent implements OnInit {
   ingresar(formData: any) {
     this.authService.login(formData).subscribe({
       next: async (res) => {
+        console.log(res);
         this.valueService.setToken(res.token);
         this.valueService.token = res.token;
         this.valueService.setId(res.user.id);

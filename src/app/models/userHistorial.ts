@@ -5,6 +5,6 @@ export class HistorialDisplay {
     public id: number = 0,
     public nombre: string = '',
     public apellido: string = '',
-    public historial_clinico?: Historial,
+    public historialClinico?: Historial,
   ) {}
 }
